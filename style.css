@@ -1,0 +1,561 @@
+
+
+:root {
+    --font-heading: 'Volkhov', serif;
+    --font-body: 'Poppins', sans-serif;
+    
+    --primary-color: #181E4B;
+    --accent-orange: #DF6951;
+    --accent-yellow: #F1A501;
+    --text-muted: #5E6282;
+    --bg-light: #FFF9F2;
+    --sub-bg: #DFD7F9;
+    
+    --card-shadow: 0px 1.85px 3.15px rgba(0, 0, 0, 0.02),
+                  0px 8.15px 6.51px rgba(0, 0, 0, 0.03),
+                  0px 20px 13px rgba(0, 0, 0, 0.04),
+                  0px 38.5px 25.48px rgba(0, 0, 0, 0.05),
+                  0px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--primary-color);
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Typography Headings */
+h1, h2, h3, .section-title {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+.section-tag {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+}
+
+.section-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+/* Background Blob Animations */
+.blob-bg-hero {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, rgba(255,241,218,0.8) 0%, rgba(255,241,218,0) 70%);
+    z-index: -1;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Header & Navbar */
+.header-nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    z-index: 1050;
+}
+
+/* .logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #181E4B;
+} */
+
+.jadoo-logo{
+
+    width:114.91px;
+    height: 33.99px;
+    top:48.7px;
+    left:140.92px;
+    
+
+
+}
+
+.logo-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-orange);
+    border-radius: 50%;
+    margin-left: 2px;
+}
+
+.navbar-links .nav-link {
+    color: #212529;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.navbar-links .nav-link:hover {
+    color: var(--accent-orange);
+}
+
+.signup-btn {
+    border-color: #212529;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: var(--primary-color);
+    color: #e0b1b1 !important;
+    border-color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-subtitle {
+    color: var(--accent-orange);
+    letter-spacing: 1.2px;
+    font-size: 1.1rem;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.15;
+    color: #181E4B;
+    font-weight: 700;
+}
+
+.enjoy-underline {
+    position: relative;
+    display: inline-block;
+}
+
+.stroke-svg {
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 100%;
+    height: 18px;
+    z-index: -1;
+}
+
+.hero-desc {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.hero-cta-btn {
+    background-color: var(--accent-yellow);
+    border: none;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.25);
+    border-radius: 10px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-cta-btn:hover {
+    background-color: #e09700;
+    transform: translateY(-3px);
+    box-shadow: 0px 25px 40px rgba(241, 165, 1, 0.35);
+}
+
+/* Play Demo Button */
+.play-icon-wrap {
+    width: 52px;
+    height: 52px;
+    background-color: var(--accent-orange);
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.play-demo-btn:hover .play-icon-wrap {
+    transform: scale(1.1);
+    background-color: #c9543c;
+}
+
+.hero-image-wrapper {
+    position: relative;
+    max-width: 500px;
+}
+
+.hero-img {
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1);
+}
+/* 
+.plane-float {
+    position: absolute;
+    z-index: 3;
+    animation: floatPlane 4s ease-in-out infinite alternate;
+}
+
+.plane-1 {
+    top: 10%;
+    left: 5%;
+}
+
+.plane-2 {
+    top: 25%;
+    right: 5%;
+    animation-delay: 2s;
+}
+
+@keyframes floatPlane {
+    0% { transform: translateY(0px) rotate(0deg); }
+    100% { transform: translateY(-15px) rotate(10deg); }
+} */
+
+/* Services / Category Cards */
+
+.traveller-plane-1{
+
+    width: 130.04px;
+    height:70.56px;
+    top:161px;
+    /* left:7.36px; */
+    rotate:50.89°;
+
+}
+
+.service-card {
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background: #FFFFFF;
+    box-shadow: var(--card-shadow);
+    transform: translateY(-8px);
+}
+
+.service-card-active {
+    box-shadow: var(--card-shadow);
+    background: #FFFFFF;
+}
+
+.active-card-decor {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    background-color: var(--accent-orange);
+    border-radius: 30px 0 10px 0;
+    z-index: -1;
+}
+
+.service-img {
+    width:166.87px;
+    height:153.33px;
+    object-fit: contain;
+    
+}
+
+.event-img{
+
+    width:67px;
+    height:
+75px;
+}
+
+/* Destination Cards */
+.destination-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.12) !important;
+}
+
+.dest-img-wrap {
+    height: 320px;
+    overflow: hidden;
+}
+
+.dest-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.destination-card:hover .dest-img {
+    transform: scale(1.08);
+}
+
+.dest-price {
+    color: var(--text-muted);
+}
+
+/* Step Items */
+.step-icon-box {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bg-teal {
+    background-color: #00a896 !important;
+}
+
+.bg-teal-subtle {
+    background-color: #e0f2f1 !important;
+}
+
+.text-teal {
+    color: #00a896 !important;
+}
+
+/* Glass Trip Card & Progress Badge */
+.trip-card-glow-bg {
+    position: absolute;
+    top: -20px;
+    right: 10%;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(89, 177, 230, 0.4) 0%, rgba(89, 177, 230, 0) 70%);
+    z-index: 0;
+}
+
+.trip-main-card {
+    width: 100%;
+    max-width: 370px;
+    z-index: 2;
+}
+
+.trip-card-img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.trip-action-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #84829A;
+    font-size: 0.9rem;
+    transition: background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.trip-action-icon:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+.rome-progress-badge {
+    position: absolute;
+    bottom: 40px;
+    right: -40px;
+    width: 260px;
+    z-index: 3;
+}
+
+.avatar-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.fs-7 {
+    font-size: 0.75rem;
+}
+
+/* Testimonials */
+.testimonial-dots .dot {
+    width: 12px;
+    height: 12px;
+    background-color: #E5E5E5;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.testimonial-dots .dot.active {
+    background-color: var(--primary-color);
+}
+
+.testimonial-stack-wrapper {
+    position: relative;
+    min-height: 260px;
+}
+
+.testimonial-card {
+    transition: all 0.4s ease;
+}
+
+.testimonial-active {
+    z-index: 2;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08) !important;
+}
+
+.testimonial-back {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: calc(100% - 60px);
+    z-index: 1;
+    opacity: 0.6;
+    transform: scale(0.95);
+    border: 1px solid #ECECEC;
+}
+
+.testimonial-avatar {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrow-btn {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #BCB6C6;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.arrow-btn:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+/* Partner Logos */
+.partner-logo {
+    
+    width:130px;
+    height:130px;
+    
+}
+
+/* .partner-logo:hover {
+    opacity: 1;
+    color: var(--primary-color) !important;
+} */
+
+/* Subscribe Section */
+.subscribe-card {
+    background: #DFD7F9;
+    border-radius: 120px 20px 20px 20px;
+    background: linear-gradient(180deg, #F9F7FE 0%, #E8E5FB 100%);
+}
+
+.subscribe-send-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%);
+    color: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+.subscribe-title {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 2rem;
+    color: #5E6282;
+    line-height: 1.5;
+}
+
+.input-icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    font-size: 1.2rem;
+}
+
+.subscribe-btn {
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    box-shadow: 0px 20px 35px rgba(255, 125, 104, 0.2);
+    min-width: 160px;
+}
+
+.subscribe-btn:hover {
+    background: linear-gradient(180deg, #e67d56 0%, #e66853 100%);
+}
+
+/* Footer Links */
+.footer-links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-orange);
+}
+
+.social-icon {
+    width: 42px;
+    height: 42px;
+    background-color: #FFF;
+    color: #080809;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: #FFF;
+}
+
+.social-icon-ig {
+    background: conic-gradient(from 180deg at 50% 50%, #B8D2CE 0deg, #FFC0E5 360deg);
+}
+
+/* Responsive Overrides */
+@media (max-width: 991px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .rome-progress-badge {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .testimonial-back {
+        display: none;
+    }
+    
+    .subscribe-card {
+        border-radius: 40px;
+    }
+}
